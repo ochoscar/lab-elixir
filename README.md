@@ -1,21 +1,78 @@
-# ConceptsElixir
+# Elixir Lab
 
-**TODO: Add description**
+A personal playground for learning and experimenting with the Elixir programming language. This repository contains small examples, algorithms, language features, and experiments to better understand the Elixir ecosystem.
 
-## Installation
+## Requirements
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `concepts_elixir` to your list of dependencies in `mix.exs`:
+- Elixir
+- Erlang/OTP
 
-```elixir
-def deps do
-  [
-    {:concepts_elixir, "~> 0.1.0"}
-  ]
-end
+Verify your installation:
+
+```powershell
+elixir --version
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/concepts_elixir>.
+## Running a File
 
+To execute a standalone `.exs` script:
+
+```powershell
+elixir .\lib\<folder>\<file>.exs
+```
+
+Example:
+
+```powershell
+elixir .\lib\hello_world.exs
+```
+
+## Loading a Module Without Executing It
+
+If a file only defines one or more modules, you can load it using:
+
+```powershell
+elixir -r .\lib\<folder>\<file>.ex
+```
+
+This compiles and loads the module into the current Elixir session but does not invoke any functions.
+
+## Executing a Function Inside a Module
+
+To execute a specific function from a module without creating a separate script:
+
+```powershell
+elixir -r .\lib\<folder>\<file>.ex -e "ModuleName.function_name()"
+```
+
+## Interactive Shell
+
+Start an interactive Elixir shell:
+
+```powershell
+iex.bat
+or
+iex
+```
+
+Or preload a module:
+
+```powershell
+iex -r .\lib\<folder>\<file>.ex
+```
+
+Then call functions interactively:
+
+```elixir
+ModuleName.function_name()
+```
+
+## Purpose
+
+This repository is intended for:
+
+- Learning Elixir syntax and idioms
+- Exploring functional programming concepts
+- Implementing algorithms and data structures
+- Experimenting with concurrency and OTP
+- Keeping small, self-contained examples for future reference
