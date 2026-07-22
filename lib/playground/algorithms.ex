@@ -30,4 +30,9 @@ defmodule Algorithms do
   def caesar([ head | tail ], cypher, offset), do: caesar(tail, [ cypher | [head + offset] ], offset)
   def caesar([], cypher, _offset), do: cypher
 
+  # ---- span
+  def span(from, to), do: span(from, to, [from])
+  def span(from, to, span_list) when from < to, do: span(from + 1, to, span_list ++ [ from + 1])
+  def span(from, to, span_list) when from === to, do: span_list
+
 end
