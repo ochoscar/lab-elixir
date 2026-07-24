@@ -1,5 +1,7 @@
 defmodule HelloWorldNTimes do
-  @moduledoc false
+  @moduledoc """
+  https://www.hackerrank.com/challenges/fp-hello-world-n-times/problem?isFullScreen=true
+  """
 
   def run() do
     IO.gets("")

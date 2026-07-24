@@ -1,5 +1,7 @@
 defmodule SolveMeFirstFP do
-  @moduledoc false
+  @moduledoc """
+  https://www.hackerrank.com/challenges/fp-solve-me-first/problem?isFullScreen=true
+  """
 
   def read_number do
     IO.gets("Enter your number: ")
