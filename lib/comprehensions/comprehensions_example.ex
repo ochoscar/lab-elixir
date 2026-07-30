@@ -1,4 +1,4 @@
-defmodule ComprehensionsExample do
+defmodule Comprehensions.ComprehensionsExample do
   @moduledoc false
 
   #Enum.map(1..3, &(&1 * 2))

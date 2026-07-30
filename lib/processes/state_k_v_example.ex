@@ -1,8 +1,8 @@
-defmodule StateKVExample do
+defmodule Processes.StateKVExample do
   @moduledoc false
 
   IO.puts("INIT")
-  {:ok, pid} = KV.start_link
+  {:ok, pid} = Processes.KV.start_link
 
   # pid now has the pid of our new process that is being
   # used to get and store key value pairs

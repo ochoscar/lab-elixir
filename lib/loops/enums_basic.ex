@@ -1,4 +1,4 @@
-defmodule EnumsBasic do
+defmodule Loops.EnumsBasic do
   @moduledoc false
 
   # All
@@ -10,7 +10,7 @@ defmodule EnumsBasic do
   IO.puts(res)
 
   # Chunk
-  res = Enum.chunk([1, 2, 3, 4, 5, 6], 2)
+  res = Enum.chunk_every([1, 2, 3, 4, 5, 6], 2)
   IO.puts(res)
 
   # Each

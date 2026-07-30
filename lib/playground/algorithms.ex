@@ -1,4 +1,4 @@
-defmodule Algorithms do
+defmodule Playground.Algorithms do
   @moduledoc false
 
   # ---- Binary search

@@ -1,4 +1,4 @@
-defmodule OurMacro do
+defmodule Macros.OurMacro do
   @moduledoc false
   defmacro unless(expr, do: block) do
     quote do

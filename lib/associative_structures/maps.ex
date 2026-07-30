@@ -1,4 +1,4 @@
-defmodule Maps do
+defmodule AssociativeStructures.Maps do
   @moduledoc false
 
   # Maps are solution for key values, with a list Elixir continue using linked list
@@ -11,7 +11,7 @@ defmodule Maps do
 
   # Inserting a key
   map = %{:a => 1, 2 => :b}
-  new_map = Dict.put_new(map, :new_val, "value")
+  new_map = Map.put_new(map, :new_val, "value")
   IO.puts(new_map[:new_val])
 
   # Updating a value
@@ -24,7 +24,7 @@ defmodule Maps do
   IO.puts(a)
 
   n = 1
-  map = %{n => :one}
+  _map = %{n => :one}
   %{^n => :one} = %{1 => :one, 2 => :two, 3 => :three}
 
   # Maps with atoms

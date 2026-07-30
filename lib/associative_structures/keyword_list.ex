@@ -1,4 +1,4 @@
-defmodule KeywordList do
+defmodule AssociativeStructures.KeywordList do
   @moduledoc false
 
   # Associative list is formed by two-items per position into the tuple

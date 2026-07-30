@@ -1,4 +1,4 @@
-defmodule HelloWorldNTimes do
+defmodule Hackerrank.HelloWorldNTimes do
   @moduledoc """
   https://www.hackerrank.com/challenges/fp-hello-world-n-times/problem?isFullScreen=true
   """
@@ -17,5 +17,3 @@ defmodule HelloWorldNTimes do
   end
 
 end
-
-HelloWorldNTimes.run()

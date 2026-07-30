@@ -1,4 +1,4 @@
-defmodule SolveMeFirstFP do
+defmodule Hackerrank.SolveMeFirstFP do
   @moduledoc """
   https://www.hackerrank.com/challenges/fp-solve-me-first/problem?isFullScreen=true
   """
@@ -15,5 +15,3 @@ defmodule SolveMeFirstFP do
     IO.puts "#{n1 + n2}"
   end
 end
-
-SolveMeFirstFP.run()

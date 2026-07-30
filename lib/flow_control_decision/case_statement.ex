@@ -1,4 +1,4 @@
-defmodule CaseStatement do
+defmodule FlowControlDecision.CaseStatement do
   @moduledoc false
   case 3 do
     1 -> IO.puts("Hi, I'm one")

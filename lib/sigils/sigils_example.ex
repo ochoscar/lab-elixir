@@ -1,4 +1,4 @@
-defmodule SigilsExample do
+defmodule Sigils.SigilsExample do
   @moduledoc false
 
   # A regular expression that matches strings which contain "foo" or
@@ -26,7 +26,7 @@ defmodule SigilsExample do
   # "String without escape codes \\x26 without \#{interpolation}"
 
   # Custom Sigil
-  import CustomSigil
+  import Sigils.CustomSigil
   IO.puts(~u/tutorials point/)
 
 end

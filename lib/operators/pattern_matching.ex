@@ -1,8 +1,8 @@
-defmodule PatternMatching do
+defmodule Operators.PatternMatching do
   @moduledoc false
 
   # Basic pattern matching
-  x = 12
+  _x = 12
   x = "Hello"
   IO.puts(x)
 

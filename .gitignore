@@ -16,6 +16,13 @@
 # If the VM crashes, it generates a dump, let's ignore it too.
 erl_crash.dump
 
+# Files written by the lib/files_io and lib/handling_errors examples when run.
+/newfile.txt
+/sample
+
+# Stale IntelliJ non-Mix build output.
+/out/
+
 # Also ignore archive artifacts (built via "mix archive.build").
 *.ez
 

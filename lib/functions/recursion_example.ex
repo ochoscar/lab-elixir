@@ -1,4 +1,4 @@
-defmodule RecursionExample do
+defmodule Functions.RecursionExample do
   @moduledoc false
 
   defmodule Math do

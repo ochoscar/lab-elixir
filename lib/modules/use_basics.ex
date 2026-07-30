@@ -1,4 +1,4 @@
-defmodule UseBasics do
+defmodule Modules.UseBasics do
   @moduledoc false
 
   # Invokes the custom code defined in Foo as an extension point

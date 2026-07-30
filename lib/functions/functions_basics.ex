@@ -1,4 +1,4 @@
-defmodule FunctionsBasics do
+defmodule Functions.FunctionsBasics do
   @moduledoc false
 
   # Anonymous Functions
@@ -41,9 +41,9 @@ defmodule FunctionsBasics do
 end
 
 
-IO.puts(FunctionsBasics.sum(5, 6))
-IO.puts(FunctionsBasics.sum2(5, 6))
-IO.puts(FunctionsBasics.hello("world"))
-IO.puts(FunctionsBasics.hello2("Ayush", "en"))
-IO.puts(FunctionsBasics.hello2("Ayush"))
-IO.puts(FunctionsBasics.hello2("Ayush", "es"))
+IO.puts(Functions.FunctionsBasics.sum(5, 6))
+IO.puts(Functions.FunctionsBasics.sum2(5, 6))
+IO.puts(Functions.FunctionsBasics.hello("world"))
+IO.puts(Functions.FunctionsBasics.hello2("Ayush", "en"))
+IO.puts(Functions.FunctionsBasics.hello2("Ayush"))
+IO.puts(Functions.FunctionsBasics.hello2("Ayush", "es"))

@@ -1,9 +1,5 @@
-defmodule DataTypes do
+defmodule DataTypes.DataTypes do
   @moduledoc """
-  Documentation for `DataTypes`.
-  """
-
-  @doc """
   Data types
 
   ## Numerical Types

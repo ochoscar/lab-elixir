@@ -1,4 +1,4 @@
-defmodule FunnyCalculator do
+defmodule Typespecs.FunnyCalculator do
   @moduledoc false
 
   @type number_with_joke :: {number, String.t}

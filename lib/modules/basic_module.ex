@@ -1,7 +1,7 @@
-defmodule BasicModule do
+defmodule Modules.BasicModule do
   @moduledoc false
   def sum(a, b) do
     a + b
   end
 end
-IO.puts(BasicModule.sum(1, 2))
+IO.puts(Modules.BasicModule.sum(1, 2))

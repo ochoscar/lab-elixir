@@ -1,4 +1,4 @@
-defmodule Recursion do
+defmodule Functions.Recursion do
   @moduledoc false
 
   def fact(res, num) do
@@ -20,7 +20,7 @@ defmodule Recursion do
 
 end
 
-IO.puts(Recursion.fact(1,5))
+IO.puts(Functions.Recursion.fact(1,5))
 
 a = ["Hey", 100, 452, :true, "People"]
-Recursion.print(a)
+Functions.Recursion.print(a)

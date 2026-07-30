@@ -1,4 +1,4 @@
-defmodule ProtocolExample do
+defmodule Protocols.ProtocolExample do
   @moduledoc false
 
   #Defining the protocol

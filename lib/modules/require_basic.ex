@@ -1,4 +1,4 @@
-defmodule RequireBasic do
+defmodule Modules.RequireBasic do
   @moduledoc false
 
   # Ensure the module is compiled and available (usually for macros)

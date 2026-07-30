@@ -1,4 +1,4 @@
-defmodule MiscOperators do
+defmodule Operators.MiscOperators do
   @moduledoc false
 
   # Concatenation
@@ -17,7 +17,7 @@ defmodule MiscOperators do
   IO.puts(?\s)
 
   # Ternary
-  a = if true, do: "True!", else: "False!"
+  _a = if true, do: "True!", else: "False!"
 
   # In
   :yes in [:true, :false, :yes]

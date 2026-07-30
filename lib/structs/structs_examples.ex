@@ -1,4 +1,4 @@
-defmodule StructsExamples do
+defmodule Structs.StructsExamples do
   @moduledoc false
 
   john  = %User{}

@@ -1,4 +1,4 @@
-defmodule ListReplication do
+defmodule Hackerrank.ListReplication do
   @moduledoc """
   https://www.hackerrank.com/challenges/fp-list-replication/problem?isFullScreen=true
   """
@@ -26,4 +26,3 @@ defmodule ListReplication do
   end
 end
 
-ListReplication.run()

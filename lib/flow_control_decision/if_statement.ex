@@ -1,4 +1,4 @@
-defmodule IfStatemente do
+defmodule FlowControlDecision.IfStatement do
   @moduledoc false
   a = true
   if a === true do

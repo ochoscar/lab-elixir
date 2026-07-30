@@ -1,4 +1,4 @@
-defmodule User do
+defmodule Structs.User do
   @moduledoc false
 
   defstruct name: "John", age: 27

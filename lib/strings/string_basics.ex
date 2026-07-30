@@ -1,7 +1,7 @@
-defmodule StringBasics do
+defmodule Strings.StringBasics do
   @moduledoc false
   # String basics
-  str = str = "Hello world"
+  str = "Hello world"
   IO.puts(str)
 
   # String empty

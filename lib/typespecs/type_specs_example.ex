@@ -1,4 +1,4 @@
-defmodule TypeSpecsExample do
+defmodule Typespecs.TypeSpecsExample do
   @moduledoc false
 
   {result, comment} = FunnyCalculator.add(10, 20)

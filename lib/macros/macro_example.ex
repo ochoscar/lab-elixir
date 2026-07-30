@@ -1,10 +1,10 @@
-defmodule MacroExample do
+defmodule Macros.MacroExample do
   @moduledoc false
 
-  require OurMacro
+  require Macros.OurMacro
 
-  OurMacro.unless true, do: IO.puts "True Expression"
+  Macros.OurMacro.unless true, do: IO.puts "True Expression"
 
-  OurMacro.unless false, do: IO.puts "False expression"
+  Macros.OurMacro.unless false, do: IO.puts "False expression"
 
 end

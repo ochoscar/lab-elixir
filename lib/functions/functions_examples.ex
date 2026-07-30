@@ -1,4 +1,4 @@
-defmodule FunctionsExamples do
+defmodule Functions.FunctionsExamples do
   @moduledoc false
 
   # Anonymous Functions

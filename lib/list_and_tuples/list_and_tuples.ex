@@ -1,9 +1,9 @@
-defmodule ListAndTuples do
+defmodule ListAndTuples.ListAndTuples do
   @moduledoc false
 
   # List basics
   IO.puts([104, 101, 108, 108, 111])
-  IO.puts(is_list('Hello'))
+  IO.puts(is_list(~c"Hello"))
   IO.puts(length([1, 2, :true, "str"]))
 
   # List Contactenation
@@ -20,7 +20,7 @@ defmodule ListAndTuples do
 
   # Tuple append
   tuple = {:ok, "Hello"}
-  Tuple.append(tuple, :world)
+  Tuple.insert_at(tuple, tuple_size(tuple), :world)
   IO.puts("#{inspect(tuple)}")
 
   # Insert a value

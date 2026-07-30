@@ -1,4 +1,4 @@
-defmodule LoopBasic do
+defmodule Loops.LoopBasic do
   @moduledoc false
   def print_multiple_times(msg, n) when n <= 1 do
     IO.puts msg
@@ -11,4 +11,4 @@ defmodule LoopBasic do
 
 end
 
-LoopBasic.print_multiple_times("Hello", 10)
+Loops.LoopBasic.print_multiple_times("Hello", 10)

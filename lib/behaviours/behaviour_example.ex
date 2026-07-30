@@ -1,4 +1,4 @@
-defmodule BehaviourExample do
+defmodule Behaviours.BehaviourExample do
   @moduledoc false
 
   defmodule GreetBehaviour do

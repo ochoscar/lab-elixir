@@ -1,4 +1,4 @@
-defmodule KV do
+defmodule Processes.KV do
   @moduledoc false
 
   def start_link do
@@ -8,11 +8,11 @@ defmodule KV do
   defp loop(map) do
     receive do
       {:get, key, caller} ->
-        returnMap = %{key => Map.get(map, key)}
+        return_map = %{key => Map.get(map, key)}
         IO.puts("message sended")
         IO.puts(key)
-        IO.puts(Map.get(returnMap, key))
-        send caller, returnMap
+        IO.puts(Map.get(return_map, key))
+        send caller, return_map
         loop(map)
 
       {:put, key, value} ->

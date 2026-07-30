@@ -1,4 +1,4 @@
-defmodule ExecOperators do
+defmodule Operators.BasicOperators do
   @moduledoc false
 
   # Aritmetics
@@ -69,7 +69,7 @@ defmodule ExecOperators do
   a = 5
   b = 6
 
-  use Bitwise
+  import Bitwise
 
   IO.puts("a &&& b " <> to_string(a &&& b))
 
@@ -79,9 +79,9 @@ defmodule ExecOperators do
 
   IO.puts("a <<< b" <> to_string(a <<< b))
 
-  IO.puts("a ^^^ b " <> to_string(a ^^^ b))
+  IO.puts("a ^^^ b " <> to_string(bxor(a, b)))
 
-  IO.puts("~~~a " <> to_string(~~~a))
+  IO.puts("~~~a " <> to_string(bnot(a)))
 
 
 

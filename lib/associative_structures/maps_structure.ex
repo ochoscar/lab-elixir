@@ -1,4 +1,4 @@
-defmodule MapsStructure do
+defmodule AssociativeStructures.MapsStructure do
   @moduledoc false
 
   # Definition an basic operations
@@ -8,7 +8,7 @@ defmodule MapsStructure do
 
   # Inserting a key
   map = %{:a => 1, 2 => :b}
-  new_map = Dict.put_new(map, :new_val, "value")
+  new_map = Map.put_new(map, :new_val, "value")
   IO.puts(new_map[:new_val])
 
   # Updating value
@@ -21,7 +21,7 @@ defmodule MapsStructure do
   IO.puts(a)
 
   n = 1
-  map = %{n => :one}
+  _map = %{n => :one}
   %{^n => :one} = %{1 => :one, 2 => :two, 3 => :three}
   IO.puts(n)
 

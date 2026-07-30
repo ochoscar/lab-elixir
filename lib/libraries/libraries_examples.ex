@@ -1,4 +1,4 @@
-defmodule LibrariesExamples do
+defmodule Libraries.LibrariesExamples do
   @moduledoc false
 
   # Using Strings
@@ -40,7 +40,7 @@ defmodule LibrariesExamples do
   q = :queue.in("B", q)
   {{:value, val}, q} = :queue.out(q)
   IO.puts(val)
-  {{:value, val}, q} = :queue.out(q)
+  {{:value, val}, _q} = :queue.out(q)
   IO.puts(val)
 
 end

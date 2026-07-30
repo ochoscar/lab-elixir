@@ -1,4 +1,4 @@
-defmodule MathExamples do
+defmodule ModulesExample.MathExamples do
   @moduledoc false
 
   def sum(a, b) do

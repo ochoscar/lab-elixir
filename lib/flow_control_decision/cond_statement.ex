@@ -1,4 +1,4 @@
-defmodule CondStatement do
+defmodule FlowControlDecision.CondStatement do
   @moduledoc false
   guess = 46
   cond do
