@@ -92,4 +92,49 @@ defmodule Playground.Algorithms do
   end
   def flatten([], flist), do: flist
 
+  # A function returns true if a single-quoted string contains only printable ASCII (from space throught tilde)
+  def is_printable?([ head | tail ]), do: head > 32 and head < 126 and is_printable?(tail)
+  def is_printable?([]), do: true
+
+  # Return true if the parameters are anagrams
+  # Simple solution  Enum.frequencies(~c"pata") == Enum.frequencies(~c"apta")
+  def anagram?(word1 , word2) do
+    if length(word1) != length(word2) do
+      false
+    else
+      anagramr?(word1, word2)
+    end
+  end
+  def anagramr?([ head | tail ] , word) do
+    vi =
+      word
+      |> Enum.with_index()
+      |> Enum.find(fn {value, _index} -> value == head end)
+    if vi == nil do
+      false
+    else
+      {_v, i} = vi
+      new_word = word |> List.delete_at(i)
+      true and anagram?(tail, new_word)
+    end
+  end
+  def anagramr?([], _word2), do: true
+
+  # calculate('123+27') => 150
+  # parms number[+-*/]number
+  def calculate(op) do
+    string_expression = List.to_string(op)
+    ops = Regex.split(~r/([\+\-\*\/])/, string_expression, include_captures: true)
+
+    num1 = String.to_integer(Enum.at(ops, 0))
+    operation = Enum.at(ops, 1)
+    num2 = String.to_integer(Enum.at(ops, 2))
+
+    calculate(num1, num2, operation)
+  end
+  def calculate(num1, num2, "+"), do: num1 + num2
+  def calculate(num1, num2, "-"), do: num1 - num2
+  def calculate(num1, num2, "*"), do: num1 * num2
+  def calculate(num1, num2, "/"), do: num1 / num2
+
 end
