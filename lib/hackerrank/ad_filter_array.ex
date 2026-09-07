@@ -16,7 +16,7 @@ defmodule Hackerrank.FilterArray do
       |> Enum.to_list()
 
     filter_array(list, [], &(&1 < x))
-      |> Enum.each &IO.puts/1
+      |> Enum.each(&IO.puts/1)
   end
 
   def filter_array([ head | tail ], new_list, predicate) do
