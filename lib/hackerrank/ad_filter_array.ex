@@ -1,4 +1,4 @@
-defmodule Hackerrank.SolveMeFirstFP do
+defmodule Hackerrank.FilterArray do
   @moduledoc """
   https://www.hackerrank.com/challenges/fp-filter-array/problem?isFullScreen=true
   """
