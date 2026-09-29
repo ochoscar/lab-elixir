@@ -1,4 +1,4 @@
-defmodule Solution do
+defmodule SolutionAgReverse do
     @moduledoc """
     https://www.hackerrank.com/challenges/fp-reverse-a-list/problem?isFullScreen=true
     """
@@ -17,4 +17,4 @@ defmodule Solution do
 
 end
 
-Solution.main
+SolutionAgReverse.main
