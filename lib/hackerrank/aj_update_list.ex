@@ -1,4 +1,4 @@
-defmodule Solution do
+defmodule SolutionAJUpdateList do
     # https://www.hackerrank.com/challenges/fp-update-list/problem?isFullScreen=true
 
     def run() do
@@ -15,4 +15,4 @@ defmodule Solution do
 
 end
 
-Solution.run()
+SolutionAJUpdateList.run()

@@ -1,4 +1,4 @@
-defmodule Solution do
+defmodule SolutionSumOdd do
     # https://www.hackerrank.com/challenges/fp-sum-of-odd-elements/problem?isFullScreen=true
 
     def run() do
@@ -17,4 +17,4 @@ defmodule Solution do
 
 end
 
-Solution.run()
+SolutionSumOdd.run()
